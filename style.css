@@ -1,0 +1,101 @@
+body {
+    background: #000;
+}
+p {
+    font-size:2.5vw;
+    color: #000;
+    position: absolute;
+    margin-left: 0.75vw;
+   
+}
+a {
+    text-decoration: none;
+}
+img {
+    position: absolute;
+    opacity: 0.75;
+    height: 4vw;
+    width: 4vw;
+}
+
+.nav-bar-background {
+    background-color: #2E8B57 !important;
+}
+ 
+.navbar-nav .nav-item a {
+    color: #222 !important;
+    transition: color 0.5s;
+}
+
+.navbar-nav .active a {
+    color: #000 !important;
+}
+
+.navbar-nav .nav-item a:hover{
+    color: #000 !important;
+}
+
+.button-section button a {
+    color:#2E8B57;
+    transition: color 0.2s;
+}
+.button-section button a:hover {
+    color:#fff;
+}
+.row-in-board {
+    display: flex !important;
+    direction: row;
+    width: auto;
+    height: auto;
+    margin: 0px;
+}
+
+.element-in-board {
+    
+    width: 4vw;
+    height: 4vw;
+    margin: 0.05vw;
+    border-radius: 0.2vw;
+    animation: fadeinout 4s linear forwards;
+    -webkit-animation: fadeinout 4s linear forwards;
+}
+.green-square {
+    background:  #2E8B57;
+}
+
+.white-square {
+    background: #fff;
+}
+
+
+.text-wrapper {
+    color: #2E8B57 !important;
+}
+.container{
+    padding: 25vh 12.5vw !important;
+    padding-top: 0vh;
+}
+.container-xxl{
+    padding-left: 40vw;
+}
+
+.main-section {
+    padding-left: 30vw;
+    padding-top: 7vh;
+}
+
+
+.video-responsive{
+    overflow:hidden;
+    padding-top: 20px;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+.video-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
