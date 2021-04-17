@@ -154,13 +154,26 @@ document.getElementById('start-button-element').onclick = async function () {
     if (temp) {
         animateBoard();
     }
-    await sleep((printList.length)*1.1*simSpeed)
-        printBoard();
-
-
 }
 
 var board = {};
 var imgc = {};
 var printList = [];
-var simSpeed = 200;
+var simSpeed = 250;
+
+document.getElementById('very-fast').onclick = function() {
+    simSpeed = 50;
+}
+document.getElementById('fast').onclick = function() {
+    simSpeed = 150;
+}
+document.getElementById('normal').onclick = function() {
+    simSpeed = 250;
+}
+document.getElementById('slow').onclick = function() {
+    simSpeed = 400;
+}
+document.getElementById('very-slow').onclick = function() {
+    simSpeed = 1000;
+}
+
