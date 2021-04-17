@@ -81,10 +81,7 @@ async function animateBoard() {
         }
         await sleep(simSpeed);
     }
- 
-}
 
-function printBoard() {
     for (var i = 0; i < 8; i++) {
         for (var j = 0; j < 8; j++) {
             var temp = document.getElementById(i.toString() + j.toString()).innerHTML === '<img src="black.png" alt="">';
@@ -92,7 +89,6 @@ function printBoard() {
             else document.getElementById(i.toString() + j.toString()).innerHTML = '<p>&#9819;</p>';
         }
     }
-
 }
 
 function addQueen(i, j, board) {
@@ -161,19 +157,18 @@ var imgc = {};
 var printList = [];
 var simSpeed = 250;
 
-document.getElementById('very-fast').onclick = function() {
+document.getElementById('very-fast').onclick = function () {
     simSpeed = 50;
 }
-document.getElementById('fast').onclick = function() {
+document.getElementById('fast').onclick = function () {
     simSpeed = 150;
 }
-document.getElementById('normal').onclick = function() {
+document.getElementById('normal').onclick = function () {
     simSpeed = 250;
 }
-document.getElementById('slow').onclick = function() {
+document.getElementById('slow').onclick = function () {
     simSpeed = 400;
 }
-document.getElementById('very-slow').onclick = function() {
+document.getElementById('very-slow').onclick = function () {
     simSpeed = 1000;
 }
-
