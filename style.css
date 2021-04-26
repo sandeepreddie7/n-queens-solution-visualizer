@@ -1,47 +1,31 @@
 body {
     background: #000;
 }
-p {
-    font-size:2.5vw;
+
+.main-section  p {
+    font-size:6vh;
     color: #000;
     position: absolute;
-    margin-left: 0.75vw;
+    margin-left: 0.975vh;
+    margin-bottom: 0.575vh;
    
 }
+
+
 a {
     text-decoration: none;
 }
 img {
     position: absolute;
     opacity: 0.75;
-    height: 4vw;
-    width: 4vw;
+    height: 8vh;
+    width: 8vh;
 }
 
-.nav-bar-background {
-    background-color: #2E8B57 !important;
-}
- 
-.navbar-nav .nav-item a {
-    color: #222 !important;
-    transition: color 0.5s;
+.text-wrapper {
+    color: #2E8B57 !important;
 }
 
-.navbar-nav .active a {
-    color: #000 !important;
-}
-
-.navbar-nav .nav-item a:hover{
-    color: #000 !important;
-}
-
-.button-section button a {
-    color:#2E8B57;
-    transition: color 0.2s;
-}
-.button-section button a:hover {
-    color:#fff;
-}
 .row-in-board {
     display: flex !important;
     direction: row;
@@ -52,9 +36,9 @@ img {
 
 .element-in-board {
     
-    width: 4vw;
-    height: 4vw;
-    margin: 0.05vw;
+    width: 8vh;
+    height: 8vh;
+    margin: 0.125vh;
     border-radius: 0.2vw;
     animation: fadeinout 4s linear forwards;
     -webkit-animation: fadeinout 4s linear forwards;
@@ -67,23 +51,14 @@ img {
     background: #fff;
 }
 
-
-.text-wrapper {
-    color: #2E8B57 !important;
-}
-.container{
-    padding: 25vh 12.5vw !important;
-    padding-top: 0vh;
-}
-.container-xxl{
-    padding-left: 40vw;
-}
-
 .main-section {
-    padding-left: 30vw;
-    padding-top: 7vh;
+    margin-top: 7.5vh;
+    margin-left: auto;
+    margin-right: auto;
+    display: table;
 }
 
+/* Learn more page CSS */
 
 .video-responsive{
     overflow:hidden;
