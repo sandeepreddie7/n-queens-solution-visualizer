@@ -16,7 +16,7 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light nav-bar-background">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">N-QUEENS SOLUTION VISUALIZER</a>
+            <a class="navbar-brand" href="#">N-QUEENS [BACK-TRACKING] VISUALIZER</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -29,7 +29,7 @@
                     </li>
 
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
                             SIMULATION-SPEED
                         </a>
@@ -41,9 +41,7 @@
                             <li><a class="dropdown-item" id="very-slow" href="#">Very slow</a></li>
                         </ul>
                     <li class="nav-item">
-                        <div class="start-button">
-                            <button type="button" class="btn btn-light" id="start-button-element">START</button>
-                        </div>
+                        <a class="nav-link active" aria-current="page" id="start-button-element" href="#">START</a>
                     </li>
                     </li>
                 </ul>
@@ -53,111 +51,110 @@
 
     <!----- MAIN SECTION--->
 
-    <div class="container-fluid main-section">
 
 
-        <div id="chessBoard">
+    <div class="main-section" id="chessBoard">
 
 
-            <div class="row-in-board" id="0">
-                <div class="element-in-board green-square" id="00"></div>
-                <div class="element-in-board white-square" id="01"></div>
-                <div class="element-in-board green-square" id="02"></div>
-                <div class="element-in-board white-square" id="03"></div>
-                <div class="element-in-board green-square" id="04"></div>
-                <div class="element-in-board white-square" id="05"></div>
-                <div class="element-in-board green-square" id="06"></div>
-                <div class="element-in-board white-square" id="07"></div>
-
-            </div>
-
-            <div class="row-in-board" id="row1">
-                <div class="element-in-board white-square" id="10"></div>
-                <div class="element-in-board green-square" id="11"></div>
-                <div class="element-in-board white-square" id="12"></div>
-                <div class="element-in-board green-square" id="13"></div>
-                <div class="element-in-board white-square" id="14"></div>
-                <div class="element-in-board green-square" id="15"></div>
-                <div class="element-in-board white-square" id="16"></div>
-                <div class="element-in-board green-square" id="17"></div>
-
-            </div>
-
-            <div class="row-in-board" id="row0">
-                <div class="element-in-board green-square" id="20"></div>
-                <div class="element-in-board white-square" id="21"></div>
-                <div class="element-in-board green-square" id="22"></div>
-                <div class="element-in-board white-square" id="23"></div>
-                <div class="element-in-board green-square" id="24"></div>
-                <div class="element-in-board white-square" id="25"></div>
-                <div class="element-in-board green-square" id="26"></div>
-                <div class="element-in-board white-square" id="27"></div>
-
-            </div>
-
-            <div class="row-in-board" id="row1">
-                <div class="element-in-board white-square" id="30"></div>
-                <div class="element-in-board green-square" id="31"></div>
-                <div class="element-in-board white-square" id="32"></div>
-                <div class="element-in-board green-square" id="33"></div>
-                <div class="element-in-board white-square" id="34"></div>
-                <div class="element-in-board green-square" id="35"></div>
-                <div class="element-in-board white-square" id="36"></div>
-                <div class="element-in-board green-square" id="37"></div>
-
-            </div>
-
-            <div class="row-in-board" id="row0">
-                <div class="element-in-board green-square" id="40"></div>
-                <div class="element-in-board white-square" id="41"></div>
-                <div class="element-in-board green-square" id="42"></div>
-                <div class="element-in-board white-square" id="43"></div>
-                <div class="element-in-board green-square" id="44"></div>
-                <div class="element-in-board white-square" id="45"></div>
-                <div class="element-in-board green-square" id="46"></div>
-                <div class="element-in-board white-square" id="47"></div>
-
-            </div>
-
-            <div class="row-in-board" id="row1">
-                <div class="element-in-board white-square" id="50"></div>
-                <div class="element-in-board green-square" id="51"></div>
-                <div class="element-in-board white-square" id="52"></div>
-                <div class="element-in-board green-square" id="53"></div>
-                <div class="element-in-board white-square" id="54"></div>
-                <div class="element-in-board green-square" id="55"></div>
-                <div class="element-in-board white-square" id="56"></div>
-                <div class="element-in-board green-square" id="57"></div>
-
-            </div>
-
-            <div class="row-in-board" id="row0">
-                <div class="element-in-board green-square" id="60"></div>
-                <div class="element-in-board white-square" id="61"></div>
-                <div class="element-in-board green-square" id="62"></div>
-                <div class="element-in-board white-square" id="63"></div>
-                <div class="element-in-board green-square" id="64"></div>
-                <div class="element-in-board white-square" id="65"></div>
-                <div class="element-in-board green-square" id="66"></div>
-                <div class="element-in-board white-square" id="67"></div>
-
-            </div>
-
-            <div class="row-in-board" id="row1">
-                <div class="element-in-board white-square" id="70"></div>
-                <div class="element-in-board green-square" id="71"></div>
-                <div class="element-in-board white-square" id="72"></div>
-                <div class="element-in-board green-square" id="73"></div>
-                <div class="element-in-board white-square" id="74"></div>
-                <div class="element-in-board green-square" id="75"></div>
-                <div class="element-in-board white-square" id="76"></div>
-                <div class="element-in-board green-square" id="77"></div>
-
-            </div>
-
+        <div class="row-in-board" id="0">
+            <div class="element-in-board green-square" id="00"></div>
+            <div class="element-in-board white-square" id="01"></div>
+            <div class="element-in-board green-square" id="02"></div>
+            <div class="element-in-board white-square" id="03"></div>
+            <div class="element-in-board green-square" id="04"></div>
+            <div class="element-in-board white-square" id="05"></div>
+            <div class="element-in-board green-square" id="06"></div>
+            <div class="element-in-board white-square" id="07"></div>
 
         </div>
+
+        <div class="row-in-board" id="row1">
+            <div class="element-in-board white-square" id="10"></div>
+            <div class="element-in-board green-square" id="11"></div>
+            <div class="element-in-board white-square" id="12"></div>
+            <div class="element-in-board green-square" id="13"></div>
+            <div class="element-in-board white-square" id="14"></div>
+            <div class="element-in-board green-square" id="15"></div>
+            <div class="element-in-board white-square" id="16"></div>
+            <div class="element-in-board green-square" id="17"></div>
+
+        </div>
+
+        <div class="row-in-board" id="row0">
+            <div class="element-in-board green-square" id="20"></div>
+            <div class="element-in-board white-square" id="21"></div>
+            <div class="element-in-board green-square" id="22"></div>
+            <div class="element-in-board white-square" id="23"></div>
+            <div class="element-in-board green-square" id="24"></div>
+            <div class="element-in-board white-square" id="25"></div>
+            <div class="element-in-board green-square" id="26"></div>
+            <div class="element-in-board white-square" id="27"></div>
+
+        </div>
+
+        <div class="row-in-board" id="row1">
+            <div class="element-in-board white-square" id="30"></div>
+            <div class="element-in-board green-square" id="31"></div>
+            <div class="element-in-board white-square" id="32"></div>
+            <div class="element-in-board green-square" id="33"></div>
+            <div class="element-in-board white-square" id="34"></div>
+            <div class="element-in-board green-square" id="35"></div>
+            <div class="element-in-board white-square" id="36"></div>
+            <div class="element-in-board green-square" id="37"></div>
+
+        </div>
+
+        <div class="row-in-board" id="row0">
+            <div class="element-in-board green-square" id="40"></div>
+            <div class="element-in-board white-square" id="41"></div>
+            <div class="element-in-board green-square" id="42"></div>
+            <div class="element-in-board white-square" id="43"></div>
+            <div class="element-in-board green-square" id="44"></div>
+            <div class="element-in-board white-square" id="45"></div>
+            <div class="element-in-board green-square" id="46"></div>
+            <div class="element-in-board white-square" id="47"></div>
+
+        </div>
+
+        <div class="row-in-board" id="row1">
+            <div class="element-in-board white-square" id="50"></div>
+            <div class="element-in-board green-square" id="51"></div>
+            <div class="element-in-board white-square" id="52"></div>
+            <div class="element-in-board green-square" id="53"></div>
+            <div class="element-in-board white-square" id="54"></div>
+            <div class="element-in-board green-square" id="55"></div>
+            <div class="element-in-board white-square" id="56"></div>
+            <div class="element-in-board green-square" id="57"></div>
+
+        </div>
+
+        <div class="row-in-board" id="row0">
+            <div class="element-in-board green-square" id="60"></div>
+            <div class="element-in-board white-square" id="61"></div>
+            <div class="element-in-board green-square" id="62"></div>
+            <div class="element-in-board white-square" id="63"></div>
+            <div class="element-in-board green-square" id="64"></div>
+            <div class="element-in-board white-square" id="65"></div>
+            <div class="element-in-board green-square" id="66"></div>
+            <div class="element-in-board white-square" id="67"></div>
+
+        </div>
+
+        <div class="row-in-board" id="row1">
+            <div class="element-in-board white-square" id="70"></div>
+            <div class="element-in-board green-square" id="71"></div>
+            <div class="element-in-board white-square" id="72"></div>
+            <div class="element-in-board green-square" id="73"></div>
+            <div class="element-in-board white-square" id="74"></div>
+            <div class="element-in-board green-square" id="75"></div>
+            <div class="element-in-board white-square" id="76"></div>
+            <div class="element-in-board green-square" id="77"></div>
+
+        </div>
+
+
     </div>
+
 
 
 
