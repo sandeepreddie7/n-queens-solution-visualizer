@@ -51,7 +51,8 @@ async function animateBoard() {
                     if (i == r || j == c || (c - r) == (j - i) || (c + r) == (i + j)) {
                         if (imgc[r.toString() + c.toString()] == 0) {
                             imgc[r.toString() + c.toString()] = 1;
-                            document.getElementById(r.toString() + c.toString()).innerHTML += '<img src="black.png" alt="">';
+                            if (document.getElementById(r.toString() + c.toString()).innerHTML === "")
+                                document.getElementById(r.toString() + c.toString()).innerHTML += '<img src="black.png" alt="">';
                         }
                         else {
                             imgc[r.toString() + c.toString()] += 1;
@@ -143,7 +144,7 @@ function placeQueen(i, board) {
 }
 
 
-document.getElementById('start-button-element').onclick = async function () {
+document.getElementById('start-button-element').onclick = function () {
     var n = 8;
     initialize(board, n);
     var temp = placeQueen(0, board);
